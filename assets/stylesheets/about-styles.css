@@ -1,0 +1,18 @@
+
+
+.navbar .navbar-nav {
+display: inline-block;
+float: none;
+vertical-align: top;
+
+}
+
+
+.suez {
+  font-family: 'Suez One', serif;
+}
+
+.header {
+  font-family: 'Suez One', serif;
+  color: red;
+}
