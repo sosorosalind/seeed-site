@@ -3,59 +3,90 @@
 <head>
   <title>About Page</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/about-styles.css">
 </head>
 <body>
 
-  <section class="about-page"
-
-
-
-  <section style="background-image: url('./assets/images/about-background-back.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-    <div class="container" style="height: 400px" ;>
-
-      <div style="width: 80%; height: 300px; margin-top: 50px; margin-left:auto; margin-right:auto; border: 3px solid black; background-image: url('./assets/images/about-background-top.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
-      </div>
+  <section class="about-header">
+    <div class="icons-navbar">
+      <a href="https://www.facebook.com/seeedde/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.youtube.com/seeed" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/seeed.de/?hl=en" target="_blank">
+      <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/seeed?lang=en" target="_blank">
+      <i class="fab fa-twitter"></i>
+      </a>
     </div>
-    <nav class="navbar navbar-inverse navbar-default" style="background-color: black; opacity: 0.8; text-align: center; width: 100%;">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+    <div class="header-img-container">
+      <img class="header-img" src="./assets/images/about-background-top.jpg" />
+    </div>
+    <nav>
+      <ul class="left hidden-xs">
+          <li>
+            <a href="#home">HOME</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#discography">DISCOGRAPHY</a>
+          </li>
+      </ul>
 
-        </div>
+      <img class="hidden-xs" src="./assets/images/seeed-logo-white.jpg" />
 
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav" style="font-family: 'Martel', serif; font-weight: 900;">
-            <li><a href="#home">HOME</a></li>
-            <li class="active"><a href="#about">ABOUT</a></li>
-            <li><a href="#discography">DISCOGRAPHY</a></li>
+      <ul class="right hidden-xs">
+        <li>
+          <a href="#media">MEDIA</a>
+        </li>
+        <li>
+          <a href="#merchandise">MERCHANDISE</a>
+        </li>
+        <li>
+          <a href="#tour-dates">TOUR DATES</a>
+        </li>
+      </ul>
 
-            <!-- PUT IN LOGO IN MIDDLE
-           <li><a img="./assets/images/seeed-logo-white.jpg"</a></li> -->
-            <li><a href="#media">MEDIA</a></li>
-            <li><a href="#merchandise">MERCHANDISE</a></li>
-            <li><a href="#tour-dates">TOUR DATES</a></li>
-          </ul>
-        </div>
-        <!--/.nav-collapse -->
-      </div>
+      <a class="btn btn-default visible-xs-block mobile-nav-button" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+       <i class="fas fa-bars"></i>
+      </a>
     </nav>
   </section>
+  <div class="collapse" id="collapseExample">
+    <ul class="mobile-nav">
+      <li>
+        <a href="#home">HOME</a>
+      </li>
+      <li>
+        <a href="#about">ABOUT</a>
+      </li>
+      <li>
+        <a href="#discography">DISCOGRAPHY</a>
+      </li>
+      <li>
+        <a href="#media">MEDIA</a>
+      </li>
+      <li>
+        <a href="#merchandise">MERCHANDISE</a>
+      </li>
+      <li>
+        <a href="#tour-dates">TOUR DATES</a>
+      </li>
+    </ul>
+  </div>
 
 
   <div class="container">
-
-    <div class="text-center">
-      <h1 style="font-family: 'Martel', serif; font-weight: 700;">Members</h1>
-    </div>
-
+      <h1 class="h1">About</h1>
     <div class="row">
-      <div class="col-sm-4" style="height:200px; margin-bottom: 20px;  background-image: url('./assets/images/about-demba-nabe.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+      <div class="col-sm-4">
+        <img class="img-responsive demba" src="./assets/images/about-demba-nabe.jpg" alt="Image of Demba Nabé" data-toggle="modal" data-target="#myModal">
       </div>
       <div class="col-sm-8" style="font-family: 'Martel', serif;">
         <p> Demba Nabé, rapper and singer for Berlin band Seeed, has died in the German capital at the age of 46. The musician passed away on Thursday morning, said Christian Schertz, the band's lawyer.
@@ -67,11 +98,10 @@
     </div>
 
     <div class="container">
-      <link href="./assets/stylesheets/about-styles.css" rel="stylesheet" />
       <div style="margin: 35px" </div> <div class="row" style="font-family: 'Martel', serif;">
         <div class="header">
         </div>
-        <h3>Others</h3>
+        <h3>The Members</h3>
       </div>
       <div class="col-sm-4">
         <ul>
@@ -94,9 +124,9 @@
           <li>"Rudeboy" Rudy</li>
         </ul>
       </div>
-
     </div>
   </div>
+
   <div style="font-family: 'Martel', serif;">
     <p>
       Seeed is a German hip hop, reggae and dancehall band based in Berlin. Founded in 1998, they have become well known in Germany and its neighboring countries.
@@ -110,7 +140,25 @@
       in the German Albums Chart. It was the first time an album of Seeed achieved the top of the albums chart.
     </p>
   </div>
+
   </div><!-- /.container -->
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img class="img-responsive" src="./assets/images/about-demba-nabe.jpg" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Demba Nabé</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 
