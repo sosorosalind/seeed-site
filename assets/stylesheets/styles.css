@@ -1,0 +1,20 @@
+nav.left {}
+
+
+
+/* ABOUT STYLES */
+section.about-header {
+  height: 400px;
+  background-image: url('../images/about-background-back.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+section.about-header img {
+  width: 700px;
+  height: 300px;
+  margin-top: 50px;
+  border: 3px solid black;
+}
