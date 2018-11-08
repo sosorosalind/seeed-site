@@ -1,65 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Tour DATES</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-     <link rel="stylesheet" type="text/css" href="discography-styles.css">
-
-  <style type="text/css"></style>
-  </head>
-
+<head>
+  <title>Discography Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/discography-styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Permanent+Marker" rel="stylesheet">
+</head>
 <body>
 
-  <section style="background-image: url('./assets/images/discography-top.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0.8;">
-    <div style="height: 400px";></div>
-    <nav class="navbar navbar-inverse navbar-default" style = "background-color: black; opacity: 0.8; text-align: center; width: 100%;">
-      <div class="container">
-           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+  <section class="discography-header">
+    <div class="icons-navbar">
+      <a href="https://www.facebook.com/seeedde/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.youtube.com/seeed" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/seeed.de/?hl=en" target="_blank">
+      <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/seeed?lang=en" target="_blank">
+      <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <div class="header-img-container">
+      <img class="header-img" src="./assets/images/about-background-top.jpg" />
+    </div>
+    <nav>
+      <ul class="left hidden-xs">
+          <li>
+            <a href="home.html">HOME</a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="discography.html">DISCOGRAPHY</a>
+          </li>
+      </ul>
 
-          </div>
+      <img class="hidden-xs" src="./assets/images/seeed-logo-white.jpg" />
 
-       <div id="navbar" class="collapse navbar-collapse">
-         <ul class="nav navbar-nav" style="font-family: 'Martel', serif; font-weight: 900;">
-           <li><a href="#home">HOME</a></li>
-           <li><a href="#about">ABOUT</a></li>
-           <li class="active"><a href="#discography">DISCOGRAPHY</a></li>
+      <ul class="right hidden-xs">
+        <li>
+          <a href="media.html">MEDIA</a>
+        </li>
+        <li>
+          <a href="merchandise.html">MERCHANDISE</a>
+        </li>
+        <li>
+          <a href="tour-dates.html">TOUR DATES</a>
+        </li>
+      </ul>
 
-           <!-- PUT IN LOGO IN MIDDLE
-           <li><a img="./assets/images/seeed-logo-white.jpg"</a></li> -->
-           <li><a href="#media">MEDIA</a></li>
-           <li><a href="#merchandise">MERCHANDISE</a></li>
-           <li><a href="#tour-dates">TOUR DATES</a></li>
-         </ul>
-       </div><!--/.nav-collapse -->
-      </div>
+      <a class="btn btn-default visible-xs-block mobile-nav-button" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+       <i class="fas fa-bars"></i>
+      </a>
     </nav>
   </section>
+  <div class="collapse" id="collapseExample">
+    <ul class="mobile-nav">
+      <li>
+        <a href="home.html">HOME</a>
+      </li>
+      <li>
+        <a href="about.html">ABOUT</a>
+      </li>
+      <li>
+        <a href="discography.html">DISCOGRAPHY</a>
+      </li>
+      <li>
+        <a href="media.html">MEDIA</a>
+      </li>
+      <li>
+        <a href="merchandise.html">MERCHANDISE</a>
+      </li>
+      <li>
+        <a href="tour-dates.html">TOUR DATES</a>
+      </li>
+    </ul>
+  </div>
+
 
   <div class="container">
     <div class="row">
-      <div class="css-box" style="height:200px; margin-bottom: 20px;  background-image: url('./assets/images/album-seeed1.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+      <div class="col-sm-offset-2 col-sm-8">
+        <div class="row album-row">
+          <div class="col-sm-6">
+            <img class="img-responsive album" src="./assets/images/album-seeed1.jpg" alt="Album cover of seeed">
+          </div>
+          <div class="col-sm-6 album-info">
+            <h3 style="font-family: 'Permanent Marker', cursive">Seeed</h3>
+            <h4 style="font-family: 'Permanent Marker', cursive">28. September 2012</h4>
+            <ol style="font-family: 'Lato', sans-serif;">
+              <li>Beautiful <span class="time">3:27</span></li>
+              <li>Deine Zeit <span class="time">3:44</span></li>
+              <li>Feel for You <span class="time">3:43</span></li>
+              <li>Augenbling	<span class="time">3:23</span></li>
+              <li>You & I	<span class="time">3:47</span></li>
+              <li>Waste My Time	<span class="time">2:46</span></li>
+              <li>Seeeds Haus	<span class="time">3:18</span></li>
+              <li>Elephants	<span class="time">2:19</span></li>
+              <li>Lovelee	<span class="time">4:05</span></li>
+              <li>Wonderful Life	<span class="time">3:30</span></li>
+              <li>Molotov	<span class="time">2:25</span></li>
+              <li>Beautiful (Reprise)	<span class="time">1:47</span></li>
+            </ol>
+          </div>
+        </div>
+        <div class="row album-row">
+          <div class="col-sm-6">
+            <img class="img-responsive album" src="./assets/images/album-next2.jpg" alt="Album cover of Next!">
+          </div>
+          <div class="col-sm-6 album-info">
+            <h3 style="font-family: 'Permanent Marker', cursive">Next!</h3>
+            <h4 style="font-family: 'Permanent Marker', cursive">14. October 2005</h4>
+            <ol style="font-family: 'Lato', sans-serif;">
+              <li>Schwinger	<span class="time">3:20</span></li>
+              <li>Next…!	<span class="time">3:06</span></li>
+              <li>Aufstehn!	<span class="time">3:51</span></li>
+              <li>Stand Up	<span class="time">2:38</span></li>
+              <li>Tight Pants	<span class="time">3:06</span></li>
+              <li>Please, Please	<span class="time">3:36</span></li>
+              <li>Ocean’s 11	<span class="time">2:53</span></li>
+              <li>Can’t Hold Me	<span class="time">2:39</span></li>
+              <li>Goosebumps	<span class="time">2:50</span></li>
+              <li>Slowlife	<span class="time">4:17</span></li>
+              <li>Ding <span class="time">3:25</span></li>
+              <li>She Got Me Twisted	<span class="time">3:11</span></li>
+              <li>Light The Sun	<span class="time">3:02</span></li>
+              <li>End Of The Day	<span class="time">3:26</span></li>
+            </ol>
+          </div>
+        </div>
+        <div class="row album-row">
+          <div class="col-sm-6">
+            <img class="img-responsive album" src="./assets/images/album-new-dubby3.jpg" alt="Album cover of New Dubby">
+          </div>
+          <div class="col-sm-6 album-info">
+            <h3 style="font-family: 'Permanent Marker', cursive">New Dubby Conquerors</h3>
+            <h4 style="font-family: 'Permanent Marker', cursive">21. May 2001</h4>
+            <ol style="font-family: 'Lato', sans-serif;">
+              <li>Dancehall Caballeros	<span class="time">3:15</span></li>
+              <li>Riddim No. 1	<span class="time">3:53</span></li>
+              <li>Papa Noah	<span class="time">4:03</span></li>
+              <li>Walk Upright	<span class="time">3:32</span></li>
+              <li>Dickes B <span class="time">4:45</span></li>
+              <li>Psychedelic Kingdom	<span class="time">4:13</span></li>
+              <li>Sensimilla	<span class="time">6:06</span></li>
+              <li>We Seeed	<span class="time">5:07</span></li>
+              <li>Tide Is High	<span class="time">4:26</span></li>
+              <li>Top of the City	<span class="time">4:11</span></li>
+              <li>Fire the Hidden	<span class="time">4:19</span></li>
+              <li>New Dubby Conquerors	<span class="time">3:17</span></li>
+              <li>Light The Sun	<span class="time">3:02</span></li>
+              <li>Miss Understanding	<span class="time">4:05</span></li>
+            </ol>
+          </div>
+        </div>
       </div>
-      <div class="css-box">
-    Seeed
-    28. September 2012
     </div>
-    </div>
+  </div>
 
 
-
-      <!-- put in list here -->
-    </div>
-
-
-
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
+
 </html>

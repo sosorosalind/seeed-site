@@ -1,6 +1,5 @@
-
-section.discography-header {
-  background-image: url('../images/discography-top.jpg');
+section.about-header {
+  background-image: url('../images/tour-dates-top.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -132,42 +131,11 @@ nav.right {
   color: white;
 }
 
-.img-responsive {
-  box-shadow: 3px 2px 15px 5px rgba(0,0,0,0.78);
-}
 
 .modal-title {
     text-align: left;
 }
 
 .container {
-  padding: 20px;
-}
-
-/*Page code*/
-
-.album-row {
-  margin-top: 3rem;
-}
-
-.album {
-  margin: 0 auto;
-  transform: scale(0.7);
-}
-
-.album:hover {
-  transform: scale(1);
-  cursor: pointer;
-}
-
-.album-info ol {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
-}
-
-.album-info ol li{
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
+  padding: 40px;
 }

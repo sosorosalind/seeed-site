@@ -1,9 +1,9 @@
-
-section.discography-header {
-  background-image: url('../images/discography-top.jpg');
+section.media-header {
+  background-image: url('../images/media-top.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  opacity: 0.8;
 }
 
 .icons-navbar {
@@ -35,7 +35,7 @@ section.discography-header {
   width: 100%;
   position: relative;
   text-align: center;
-  opacity: 0.0;
+  opacity: 0;
 }
 
 .header-img-container .header-img {
@@ -132,42 +132,32 @@ nav.right {
   color: white;
 }
 
-.img-responsive {
-  box-shadow: 3px 2px 15px 5px rgba(0,0,0,0.78);
-}
 
 .modal-title {
     text-align: left;
 }
 
-.container {
-  padding: 20px;
+.h1 {
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 700;
+  padding: 10px;
+  text-shadow: 3px 4px 3px rgba(150, 150, 150, 1);
 }
 
-/*Page code*/
-
-.album-row {
-  margin-top: 3rem;
+.shadow {
+  -webkit-box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+  margin: 0.5rem;
 }
-
-.album {
-  margin: 0 auto;
-  transform: scale(0.7);
-}
-
-.album:hover {
-  transform: scale(1);
+.shadow:hover {
   cursor: pointer;
 }
 
-.album-info ol {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
+.photo-row {
+  margin-top: 2rem;
 }
 
-.album-info ol li{
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
+#videos {
+  margin-top: 4rem;
 }

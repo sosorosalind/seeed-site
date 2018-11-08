@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Merchandise Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/merch-styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Permanent+Marker" rel="stylesheet">
+</head>
+<body>
+
+  <section class="merchandise-header">
+    <div class="icons-navbar">
+      <a href="https://www.facebook.com/seeedde/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.youtube.com/seeed" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/seeed.de/?hl=en" target="_blank">
+      <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/seeed?lang=en" target="_blank">
+      <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <div class="header-img-container">
+      <img class="header-img" src="./assets/images/about-background-top.jpg" />
+    </div>
+    <nav>
+      <ul class="left hidden-xs">
+          <li>
+            <a href="home.html">HOME</a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="discography.html">DISCOGRAPHY</a>
+          </li>
+      </ul>
+
+      <img class="hidden-xs" src="./assets/images/seeed-logo-white.jpg" />
+
+      <ul class="right hidden-xs">
+        <li>
+          <a href="media.html">MEDIA</a>
+        </li>
+        <li>
+          <a href="merchandise.html">MERCHANDISE</a>
+        </li>
+        <li>
+          <a href="tour-dates.html">TOUR DATES</a>
+        </li>
+      </ul>
+
+      <a class="btn btn-default visible-xs-block mobile-nav-button" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+       <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+  </section>
+  <div class="collapse" id="collapseExample">
+    <ul class="mobile-nav">
+      <li>
+        <a href="home.html">HOME</a>
+      </li>
+      <li>
+        <a href="about.html">ABOUT</a>
+      </li>
+      <li>
+        <a href="discography.html">DISCOGRAPHY</a>
+      </li>
+      <li>
+        <a href="media.html">MEDIA</a>
+      </li>
+      <li>
+        <a href="merchandise.html">MERCHANDISE</a>
+      </li>
+      <li>
+        <a href="tour-dates.html">TOUR DATES</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="myBtnContainer" class="container">
+    <button class="btn active" onclick="filterSelection('all')">All</button>
+    <button class="btn" onclick="filterSelection('unisex')">Unisex</button>
+    <button class="btn" onclick="filterSelection('male')">Male</button>
+    <button class="btn" onclick="filterSelection('female')">Female</button>
+  </div>
+
+  <div class="container filter-container">
+    <div class="row p">
+      <div class="col-sm-4 filterDiv male">
+        <img src="./assets/images/merch/merch-male1.jpg" class="img-responsive"/>
+        <div class="sold-out-container">
+          <div class="sold-out">
+            SOLD OUT
+          </div>
+        </div>
+        <p>Male T-Shirt</p>
+        <p>S-XL</p>
+      </div>
+      <div class="col-sm-4 filterDiv male">
+        <img src="./assets/images/merch/merch-male2.jpg" class="img-responsive"/>
+        <div class="sold-out-container">
+          <div class="sold-out">
+            SOLD OUT
+          </div>
+        </div>
+        <p>Male Sweater</p>
+        <p>S-XL</p>
+      </div>
+      <div class="col-sm-4 filterDiv male">
+        <img src="./assets/images/merch/merch-male3.jpg" class="img-responsive"/>
+        <div class="sold-out-container">
+          <div class="sold-out">
+            SOLD OUT
+          </div>
+        </div>
+        <p>Male T-Shirt</p>
+        <p>S-XL</p>
+      </div>
+      <div class="col-sm-4 filterDiv male">
+        <img src="./assets/images/merch/merch-uni.jpg" class="img-responsive"/>
+        <div class="sold-out-container">
+          <div class="sold-out">
+            SOLD OUT
+          </div>
+        </div>
+        <p>Sweatshirt</p>
+        <p>S-XL</p>
+      </div>
+      <div class="col-sm-4 filterDiv female">
+        <img src="./assets/images/merch/merch-women1.jpg" class="img-responsive"/>
+        <div class="sold-out-container">
+          <div class="sold-out">
+            SOLD OUT
+          </div>
+        </div>
+        <p>Female T-Shirt</p>
+        <p>S-XL</p>
+      </div>
+      <div class="col-sm-4 filterDiv unisex">
+        <img src="./assets/images/merch/merch-cap.png" class="img-responsive"/>
+        <div class="sold-out-container">
+          <div class="sold-out">
+            SOLD OUT
+          </div>
+        </div>
+        <p>Unisex Cap</p>
+        <p>One-Size</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  filterSelection("all");
+
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current control button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+  </script>
+
+</body>
+</html>

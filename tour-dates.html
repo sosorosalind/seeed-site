@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Tour DATES</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <style type="text/css"></style>
-  </head>
-
+<head>
+  <title>Tour Dates Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./assets/stylesheets/tour-dates-styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Permanent+Marker" rel="stylesheet">
+</head>
 <body>
 
-  <section style="background-image: url('./assets/images/tour-dates-top.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0.8;">
-    <div style="height: 400px";></div>
-    <nav class="navbar navbar-inverse navbar-default" style = "background-color: black; opacity: 0.8; text-align: center; width: 100%;">
-      <div class="container">
-           <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+  <section class="about-header">
+    <div class="icons-navbar">
+      <a href="https://www.facebook.com/seeedde/" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.youtube.com/seeed" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/seeed.de/?hl=en" target="_blank">
+      <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://twitter.com/seeed?lang=en" target="_blank">
+      <i class="fab fa-twitter"></i>
+      </a>
+    </div>
+    <div class="header-img-container">
+      <img class="header-img" src="./assets/images/about-background-top.jpg" />
+    </div>
+    <nav>
+      <ul class="left hidden-xs">
+          <li>
+            <a href="home.html">HOME</a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="discography.html">DISCOGRAPHY</a>
+          </li>
+      </ul>
 
-          </div>
+      <img class="hidden-xs" src="./assets/images/seeed-logo-white.jpg" />
 
-       <div id="navbar" class="collapse navbar-collapse">
-         <ul class="nav navbar-nav" style="font-family: 'Martel', serif; font-weight: 900;">
-           <li><a href="#home">HOME</a></li>
-           <li><a href="#about">ABOUT</a></li>
-           <li><a href="#discography">DISCOGRAPHY</a></li>
+      <ul class="right hidden-xs">
+        <li>
+          <a href="media.html">MEDIA</a>
+        </li>
+        <li>
+          <a href="merchandise.html">MERCHANDISE</a>
+        </li>
+        <li>
+          <a href="tour-dates.html">TOUR DATES</a>
+        </li>
+      </ul>
 
-           <!-- PUT IN LOGO IN MIDDLE
-           <li><a img="./assets/images/seeed-logo-white.jpg"</a></li> -->
-           <li><a href="#media">MEDIA</a></li>
-           <li><a href="#merchandise">MERCHANDISE</a></li>
-           <li class="active"><a href="#tour-dates">TOUR DATES</a></li>
-         </ul>
-       </div><!--/.nav-collapse -->
-      </div>
+      <a class="btn btn-default visible-xs-block mobile-nav-button" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+       <i class="fas fa-bars"></i>
+      </a>
     </nav>
   </section>
+  <div class="collapse" id="collapseExample">
+    <ul class="mobile-nav">
+      <li>
+        <a href="home.html">HOME</a>
+      </li>
+      <li>
+        <a href="about.html">ABOUT</a>
+      </li>
+      <li>
+        <a href="discography.html">DISCOGRAPHY</a>
+      </li>
+      <li>
+        <a href="media.html">MEDIA</a>
+      </li>
+      <li>
+        <a href="merchandise.html">MERCHANDISE</a>
+      </li>
+      <li>
+        <a href="tour-dates.html">TOUR DATES</a>
+      </li>
+    </ul>
+  </div>
 
 
    <div class="container">
    <div class="table-responsive-md">
    <table class="table">
-     <thead>
+     <thead style="font-family: 'Permanent Marker'; font-size: 16px;">
        <tr>
          <th scope="col">Date</th>
          <th scope="col">Time</th>
@@ -51,52 +94,62 @@
          <th scope="col">Tickets</th>
        </tr>
      </thead>
-     <tbody>
+     <tbody style="font-family: 'Lato', sans-serif; font-size: 14px;">
        <tr>
          <th scope="row">11. October 2019</th>
          <td>8pm</td>
          <td>Jahunderthalle, Frankfurt, Germany</td>
-         <td><i class="glyphicon glyphicon-shopping-cart"></i></td>
+         <td><a href="https://www.viagogo.com/Concert-Tickets/Rap-Hip-Hop-Reggae/Seeed-Tickets" target="_blank">
+           <i class="glyphicon glyphicon-shopping-cart"></i></td>
        </tr>
        <tr>
          <th scope="row">13. October 2019</th>
          <td>8pm</td>
          <td>Sporthalle, Hamburg, Germany</td>
-         <td><i class="glyphicon glyphicon-shopping-cart"></i></td>
+         <td><a href="https://www.viagogo.com/Concert-Tickets/Rap-Hip-Hop-Reggae/Seeed-Tickets" target="_blank">
+           <i class="glyphicon glyphicon-shopping-cart"></i></td>
        </tr>
        <tr>
          <th scope="row">16. October 2019</th>
          <td>8pm</td>
          <td>Westfalenhalle 1, Dortmund, Germany</td>
-         <td><i class="glyphicon glyphicon-shopping-cart"></i></td>
+         <td><a href="https://www.viagogo.com/Concert-Tickets/Rap-Hip-Hop-Reggae/Seeed-Tickets" target="_blank">
+           <i class="glyphicon glyphicon-shopping-cart"></i></td>
        </tr>
        <tr>
          <th scope="row">17. October 2019</th>
          <td>8pm</td>
          <td>SAP Arena, Mannheim, Germany</td>
-         <td><i class="glyphicon glyphicon-shopping-cart"></i></td>
+         <td><a href="https://www.viagogo.com/Concert-Tickets/Rap-Hip-Hop-Reggae/Seeed-Tickets" target="_blank">
+           <i class="glyphicon glyphicon-shopping-cart"></i></td>
        </tr>
        <tr>
          <th scope="row">19. October 2019</th>
          <td>8pm</td>
          <td>Arena Leipzig, Leipzig, Germany</td>
-         <td><i class="glyphicon glyphicon-shopping-cart"></i></td>
+         <td><a href="https://www.viagogo.com/Concert-Tickets/Rap-Hip-Hop-Reggae/Seeed-Tickets" target="_blank">
+           <i class="glyphicon glyphicon-shopping-cart"></i></td>
        </tr>
        <tr>
          <th scope="row">21. October 2019</th>
          <td>8pm</td>
          <td>Lanxess Arena, Cologne, Germany</td>
-         <td><i class="glyphicon glyphicon-shopping-cart"></i></td>
+         <td><a href="https://www.viagogo.com/Concert-Tickets/Rap-Hip-Hop-Reggae/Seeed-Tickets" target="_blank">
+              <i class="glyphicon glyphicon-shopping-cart"></i></td>
        </tr>
        <tr>
          <th scope="row">29. October 2019</th>
          <td>8pm</td>
          <td>Olympiahalle Munich, Munich, Germany</td>
-         <td><i class="glyphicon glyphicon-shopping-cart"></i></td>
+         <td><a href="https://www.viagogo.com/Concert-Tickets/Rap-Hip-Hop-Reggae/Seeed-Tickets" target="_blank">
+           <i class="glyphicon glyphicon-shopping-cart"></i></td>
        </tr>
      </tbody>
    </table>
    </div>
+
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>
